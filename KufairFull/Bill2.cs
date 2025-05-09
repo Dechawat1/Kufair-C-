@@ -13,38 +13,48 @@ namespace KufairFull
 {
     public partial class Bill2 : Form
     {
-
-        SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-SSC2FCL;Initial Catalog=KUFAIR;User ID=sa;Password=181244;Pooling=False");
-        SqlCommand cm = new SqlCommand();
         DbConnect dbcon = new DbConnect();
         DataSet ds = new DataSet();
-        SqlDataReader dr;
-        string title = "KUFAIR";
+
 
         public Bill2()
         {
             InitializeComponent();
             DisplayEmployess();
         }
+
         private void DisplayEmployess()
         {
-            cn.Open();
-            string Query = "Select * from tblBill";
-            SqlDataAdapter sda = new SqlDataAdapter(Query, cn);
-            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            dgvCash.DataSource = ds.Tables[0];
-            cn.Close();
-
+            try
+            {
+                using (SqlConnection cn = dbcon.GetConnection())
+                {
+                    cn.Open();
+                    string query = "SELECT * FROM tblBill";
+                    using (SqlCommand cmd = new SqlCommand(query, cn))
+                    {
+                        SqlDataAdapter sda1 = new SqlDataAdapter(cmd); // Renamed 'sda' to 'sda1' to avoid conflict  
+                        DataTable dt = new DataTable();
+                        sda1.Fill(dt);
+                        dgvCash.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Bill2_Load(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM tblBill";
-            SqlDataAdapter da = new SqlDataAdapter(sql, cn);//เป็นตัวแปลงข้อมูลจากในฐานข้อมูล  โดยต้องระบุ2อย่าง  คุณจะทำไร,เอาที่ไหน   ดึงข้อมูล sql จาก con คือฐานข้อมูล
-            da.Fill(ds, "dtblBill");//เรียกว่า DataTable
-            dgvCash.DataSource = ds.Tables["dtblBill"];
+            using (SqlConnection cn = dbcon.GetConnection()) // Added 'using' to ensure proper resource disposal  
+            {
+                string sql = "SELECT * FROM tblBill";
+                SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+                da.Fill(ds, "dtblBill");
+                dgvCash.DataSource = ds.Tables["dtblBill"];
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)

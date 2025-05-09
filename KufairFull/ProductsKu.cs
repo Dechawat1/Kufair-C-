@@ -13,7 +13,7 @@ namespace KufairFull
 {
     public partial class ProductsKu : Form
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-SSC2FCL;Initial Catalog=KUFAIR;User ID=sa;Password=181244;Pooling=False");
+        SqlConnection cn = new SqlConnection(@"Data Source=Dechawat;Initial Catalog=dataKUFAIR;User ID=adminKufair;Password=181244;Pooling=False");
         SqlCommand cm = new SqlCommand();
         DbConnect dbcon = new DbConnect();
         DataSet ds = new DataSet();
@@ -25,7 +25,7 @@ namespace KufairFull
             DisplayEmployess();
         }
 
-        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-SSC2FCL;Initial Catalog=KUFAIR;User ID=sa;Password=181244;Pooling=False");
+        SqlConnection Con = new SqlConnection(@"Data Source=Dechawat;Initial Catalog=dataKUFAIR;User ID=adminKufair;Password=181244;Pooling=False");
         private void DisplayEmployess()
         {
             Con.Open();

@@ -13,14 +13,12 @@ namespace KufairFull
 {
     public partial class Home : Form
     {
-        SqlConnection cn = new SqlConnection();
-        SqlCommand cm = new SqlCommand();
         DbConnect dbcon = new DbConnect();
         public Home()
         {
             InitializeComponent();
             lblUser.Text = Login.Employee;
-             cn = new SqlConnection(dbcon.connection());
+            using (SqlConnection con = dbcon.GetConnection());
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -84,6 +82,11 @@ namespace KufairFull
             {
                 Application.Exit();
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

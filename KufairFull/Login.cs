@@ -13,16 +13,12 @@ namespace KufairFull
 {
     public partial class Login : Form
     {
-        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-SSC2FCL;Initial Catalog=KUFAIR;User ID=sa;Password=181244");
-        SqlCommand cm = new SqlCommand();
+        
         DbConnect dbcon = new DbConnect();
-        SqlDataReader dr;
-        string title = "KU FAIR";
         public static string Employee;
         public Login()
         {
             InitializeComponent();
-            Con = new SqlConnection(dbcon.connection());
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -32,39 +28,48 @@ namespace KufairFull
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtname.Text == "" || txtpass.Text == "")
+            if (txtname.Text.Trim() == "" || txtpass.Text.Trim() == "")
             {
-                MessageBox.Show("กรอกข้อมูลให้ครบ","แจ้งเตือนจากระบบ",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("กรอกข้อมูลให้ครบ", "แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            using (SqlConnection con = dbcon.GetConnection())
             {
                 try
                 {
-                    Con.Open();
-                    SqlDataAdapter sda = new SqlDataAdapter("Select count(*) from EmployeeTbl where EmpName='" + txtname.Text + "' and EmpPass='" + txtpass.Text + "'", Con);
-                    DataTable d = new DataTable();
-                    sda.Fill(d);
-                    if (d.Rows[0][0].ToString() == "1")
+                    con.Open();
+                    string query = "SELECT COUNT(*) FROM EmployeeTbl WHERE EmpName = @name AND EmpPass = @pass";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        Employee = txtname.Text;
-                        MessageBox.Show("ยินดีต้อนรับเข้าสู่ระบบ", "แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Home main = new Home();
-                        main.Show();
-                        this.Hide();
-                    }else
-                    {
-                        MessageBox.Show("โปรดตรวจสอบชื่อผู้ใช้หรือรหัสผ่านของคุณ","แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        cmd.Parameters.AddWithValue("@name", txtname.Text.Trim());
+                        cmd.Parameters.AddWithValue("@pass", txtpass.Text.Trim());
+
+                        int count = (int)cmd.ExecuteScalar();
+
+                        if (count == 1)
+                        {
+                            Employee = txtname.Text.Trim();
+                            MessageBox.Show("ยินดีต้อนรับเข้าสู่ระบบ", "แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Home main = new Home();
+                            main.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("โปรดตรวจสอบชื่อผู้ใช้หรือรหัสผ่านของคุณ", "แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                    Con.Close();
                 }
-                catch (Exception Ex)
+                catch (Exception ex)
                 {
-                    MessageBox.Show(Ex.Message);
+                    MessageBox.Show("เกิดข้อผิดพลาด: " + ex.Message);
                 }
             }
         }
-            
-               
+
+
+
 
 
         private void btnClose_Click(object sender, EventArgs e)

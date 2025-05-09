@@ -13,6 +13,8 @@ namespace KufairFull
 {
     public partial class Employees : Form
     {
+        DbConnect dbcon = new DbConnect();
+
         public Employees()
         {
 
@@ -22,18 +24,25 @@ namespace KufairFull
             DisplayEmployess();
         }
         
-        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-SSC2FCL;Initial Catalog=KUFAIR;User ID=sa;Password=181244;Pooling=False");
-        private void DisplayEmployess()
+void DisplayEmployess()
         {
-            Con.Open();
-            string Query = "Select * from Employeetbl";
-            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
-            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            EmployeeDGV.DataSource = ds.Tables[0];
-            Con.Close();
-
+            try
+            {
+                using (SqlConnection con = dbcon.GetConnection())
+                {
+                    con.Open();
+                    string query = "SELECT * FROM EmployeeTbl";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    sda.Fill(dt);
+                    EmployeeDGV.DataSource = dt;
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
         private void Clear()
         {
@@ -54,18 +63,26 @@ namespace KufairFull
             {
                 try
                 {
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into EmployeeTbl (EmpName,EmpAdd,EmpDOB,EmpPhone,EmpPass) values(@EN,@EA,@ED,@EP,@EPa)", Con);
-                    cmd.Parameters.AddWithValue("@EN", EmpName.Text);
-                    cmd.Parameters.AddWithValue("@EA", EmpAdd.Text);
-                    cmd.Parameters.AddWithValue("@ED", EmpDOB.Value.Date);
-                    cmd.Parameters.AddWithValue("@EP", EmpPhone.Text);
-                    cmd.Parameters.AddWithValue("@EPa", Password.Text);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("เพิ่มข้อมูลเรียบร้อย", "เเจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                   Con.Close();
-                    DisplayEmployess();
-                    Clear();
+                    using (SqlConnection con = dbcon.GetConnection())
+                    {
+                        con.Open();
+                        string insertQuery = "insert into EmployeeTbl (EmpName,EmpAdd,EmpDOB,EmpPhone,EmpPass) values(@EN,@EA,@ED,@EP,@EPa";
+                        using (SqlCommand cmd = new SqlCommand(insertQuery, con))
+                        {
+                            cmd.Parameters.AddWithValue("@EN", EmpName.Text);
+                            cmd.Parameters.AddWithValue("@EA", EmpAdd.Text);
+                            cmd.Parameters.AddWithValue("@ED", EmpDOB.Value.Date);
+                            cmd.Parameters.AddWithValue("@EP", EmpPhone.Text);
+                            cmd.Parameters.AddWithValue("@EPa", Password.Text);
+                            cmd.ExecuteNonQuery();
+
+                        }
+                        MessageBox.Show("เพิ่มข้อมูลเรียบร้อย", "เเจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        DisplayEmployess();
+                        Clear();
+
+                    }                    
                 }
                 catch (Exception Ex)
                 {
@@ -109,24 +126,29 @@ namespace KufairFull
             {
                 try
                 {
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("Update EmployeeTbl set EmpName=@EN,EmpAdd=@EA,EmpDOB=@ED,EmpPhone=@EP,EmpPass=@EPa where EmpNum=@EKey", Con);
-                    cmd.Parameters.AddWithValue("@EN", EmpName.Text);
-                    cmd.Parameters.AddWithValue("@EA", EmpAdd.Text);
-                    cmd.Parameters.AddWithValue("@ED", EmpDOB.Value.Date);
-                    cmd.Parameters.AddWithValue("@EP", EmpPhone.Text);
-                    cmd.Parameters.AddWithValue("@EPa", Password.Text);
-                    cmd.Parameters.AddWithValue("@EKey", key);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("อัพเดทข้อมูลเรียบร้อย!!!","แจ้งเตือนจากระบบ", MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
-                    Con.Close();
-                    DisplayEmployess();
-                    Clear();
-                  }
-                   catch (Exception Ex)
-                  {
-                           MessageBox.Show(Ex.Message);
+                    using (SqlConnection Con = dbcon.GetConnection())
+                    {
+                        Con.Open();
+                        string editQuery = "Update EmployeeTbl set EmpName=@EN,EmpAdd=@EA,EmpDOB=@ED,EmpPhone=@EP,EmpPass=@EPa where EmpNum=@EKey";
+                        using (SqlCommand editcmd = new SqlCommand(editQuery, Con))
+                        {
+                            editcmd.Parameters.AddWithValue("@EN", EmpName.Text);
+                            editcmd.Parameters.AddWithValue("@EA", EmpAdd.Text);
+                            editcmd.Parameters.AddWithValue("@ED", EmpDOB.Value.Date);
+                            editcmd.Parameters.AddWithValue("@EP", EmpPhone.Text);
+                            editcmd.Parameters.AddWithValue("@EPa", Password.Text);
+                            editcmd.Parameters.AddWithValue("@EKey", key);
+                            editcmd.ExecuteNonQuery();
+                        }
+                        MessageBox.Show("อัพเดทข้อมูลเรียบร้อย!!!", "แจ้งเตือนจากระบบ", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                        DisplayEmployess();
+                        Clear();
                     }
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
             }
         }
 
@@ -140,13 +162,17 @@ namespace KufairFull
             {
                 try
                 {
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("delete from EmployeeTbl where EmpNum = @EmpKey", Con);
-                    cmd.Parameters.AddWithValue("@EmpKey", key);
-
-                    cmd.ExecuteNonQuery();
+                    using (SqlConnection Con = dbcon.GetConnection())
+                    {
+                        Con.Open();
+                        string deleteQuery = "Delete from EmployeeTbl where EmpNum=@EKey";
+                        using (SqlCommand cmd = new SqlCommand(deleteQuery, Con))
+                        {
+                            cmd.Parameters.AddWithValue("@EKey", key);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
                     MessageBox.Show("ลบข้อมูลเรียบร้อย!!!", "แจ้งเตือนจากระบบ", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                    Con.Close();
                     DisplayEmployess();
                     Clear();
                 }

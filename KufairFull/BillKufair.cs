@@ -13,10 +13,8 @@ namespace KufairFull
 {
     public partial class BillKufair : Form
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-SSC2FCL;Initial Catalog=KUFAIR;User ID=sa;Password=181244;Pooling=False");
-        SqlCommand cm = new SqlCommand();
         DbConnect dbcon = new DbConnect();
-        SqlDataReader dr;
+
         public BillKufair()
         {
             
@@ -27,63 +25,108 @@ namespace KufairFull
                 DisplayTransactions();
             
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-SSC2FCL;Initial Catalog=KUFAIR;User ID=sa;Password=181244");
         private void GetCustomers()
         {
-            Con.Open();
-            SqlCommand cmd = new SqlCommand("Select CustId from CustomerTbl", Con);
-            SqlDataReader Rdr;
-            Rdr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Columns.Add("CustId", typeof(int));
-            dt.Load(Rdr);
-            CustIdCb.ValueMember = "CustId";
-            CustIdCb.DataSource = dt;
-            Con.Close();
+            using (SqlConnection Con = dbcon.GetConnection())
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "Select * from CustomerTbl";
+                    using (SqlCommand cmd = new SqlCommand(Query, Con))
+                    {
+                        SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        sda.Fill(dt);
+                        CustIdCb.DataSource = dt;
+                        CustIdCb.DisplayMember = "CustName";
+                        CustIdCb.ValueMember = "CustId";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
         private void DisplayProduct()
         {
-            Con.Open();
-            string Query = "Select * from tbProduct";
-            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
-            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            ProductsDGV.DataSource = ds.Tables[0];
-            Con.Close();
+            using (SqlConnection Con = dbcon.GetConnection())
+            {
+                try
+                {
+                    Con.Open();
+                    string selectQuery = "Select * from tbProduct";
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, Con))
+                    {
+                        SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        sda.Fill(dt);
+                        ProductsDGV.DataSource = dt;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+
         }
         private void DisplayTransactions()
         {
-            if (EmpNameLbl.Text == "Admin")
+            using (SqlConnection Con = dbcon.GetConnection())
             {
-                Con.Open();
-                string Query = "Select * from BillTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
-                SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
-                var ds = new DataSet();
-                sda.Fill(ds);
-                TransactionsDGV.DataSource = ds.Tables[0];
-                Con.Close();
-            }
-            else
-            {
-
+                if (EmpNameLbl.Text == "Admin")
+                {
+                    try
+                    {
+                        Con.Open();
+                        string Query = "Select * from BillTbl";
+                        SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+                        SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+                        var ds = new DataSet();
+                        sda.Fill(ds);
+                        TransactionsDGV.DataSource = ds.Tables[0];
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
+                    finally
+                    {
+                        Con.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Access Denied", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
         private void GetCustName()
         {
-            Con.Open();
-            string Query = "Select * from CustomerTbl where CustId='" + CustIdCb.SelectedValue.ToString() + "'";
-            SqlCommand cmd = new SqlCommand(Query, Con);
-            DataTable dt = new DataTable();
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            sda.Fill(dt);
-            foreach (DataRow dr in dt.Rows)
+            using (SqlConnection Con = dbcon.GetConnection()) // Use 'using' to ensure proper disposal
             {
-                CustNameTb.Text = dr["CustName"].ToString();
+                try
+                {
+                    Con.Open();
+                    string Query = "Select * from CustomerTbl where CustId='" + CustIdCb.SelectedValue.ToString() + "'";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    sda.Fill(dt);
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        CustNameTb.Text = dr["CustName"].ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
-            Con.Close();
         }
 
         int Key = 0, Stock = 0;
@@ -92,17 +135,16 @@ namespace KufairFull
             try
             {
                 int NewQty = Stock - Convert.ToInt32(QtyTb.Text);
-                Con.Open();
-                SqlCommand cmd = new SqlCommand("Update tbProduct set pqty=@PQ where pid=@PKey", Con);
-                cmd.Parameters.AddWithValue("@PQ", NewQty);
-
-                cmd.Parameters.AddWithValue("@PKey", Key);
-
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("อัพเดทสินค้า","ข้อความจากรบบ",MessageBoxButtons.OK ,MessageBoxIcon.Information);
-                Con.Close();
+                using (SqlConnection Con = dbcon.GetConnection()) // Use 'using' to ensure proper disposal
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("Update tbProduct set pqty=@PQ where pid=@PKey", Con);
+                    cmd.Parameters.AddWithValue("@PQ", NewQty);
+                    cmd.Parameters.AddWithValue("@PKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("อัพเดทสินค้า", "ข้อความจากรบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
                 DisplayProduct();
-                
             }
             catch (Exception Ex)
             {
@@ -247,20 +289,27 @@ namespace KufairFull
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (EmpNameLbl.Text == "Admin")
+            using (SqlConnection cn = dbcon.GetConnection()) // Ensure 'cn' is properly defined
             {
-                cm = new SqlCommand("Select * from BillTbl where EmpName LIKE @EN+ '%'", cn);
-                cm.Parameters.AddWithValue("EN", txtSearch.Text);
-                SqlDataAdapter sda = new SqlDataAdapter();
-                sda.SelectCommand = cm;
-                var dt = new DataTable();
-                dt.Clear();
-                sda.Fill(dt);
-                TransactionsDGV.DataSource = dt;
-            }
-            else
-            {
-                MessageBox.Show("คุณไม่มีสิทธิ์เข้าถึง", "แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                try
+                {
+                    cn.Open();
+                    string searchQuery = "Select * from BillTbl where EmpName LIKE @EN + '%'";
+                    using (SqlCommand cm = new SqlCommand(searchQuery, cn)) // Ensure 'cm' is properly defined
+                    {
+                        cm.Parameters.AddWithValue("@EN", txtSearch.Text); // Correct parameter name with '@'
+                        SqlDataAdapter sda = new SqlDataAdapter();
+                        sda.SelectCommand = cm;
+                        var dt = new DataTable();
+                        dt.Clear();
+                        sda.Fill(dt);
+                        TransactionsDGV.DataSource = dt;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -340,16 +389,20 @@ namespace KufairFull
         {
             try
             {
-                Con.Open();
-                SqlCommand cmd = new SqlCommand("insert into BillTbl (BDate,CustId,CustName,EmpName,Amt) values(@BD,@CI,@CN,@EN,@Am)", Con);
-                cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
-                cmd.Parameters.AddWithValue("@CI", CustIdCb.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@CN", CustNameTb.Text);
-                cmd.Parameters.AddWithValue("@EN", EmpNameLbl.Text);
-                cmd.Parameters.AddWithValue("@Am", GrdTotal);
-                cmd.ExecuteNonQuery();
+
+                using (SqlConnection Con = dbcon.GetConnection())
+                {
+                    Con.Open();
+                    string insertQuery = "insert into BillTbl (BDate,CustId,CustName,EmpName,Amt) values(@BD,@CI,@CN,@EN,@Am";
+                    SqlCommand cmds = new SqlCommand(insertQuery, Con);
+                    cmds.Parameters.AddWithValue("@BD", DateTime.Today.Date);
+                    cmds.Parameters.AddWithValue("@CI", CustIdCb.SelectedValue.ToString());
+                    cmds.Parameters.AddWithValue("@CN", CustNameTb.Text);
+                    cmds.Parameters.AddWithValue("@EN", EmpNameLbl.Text);
+                    cmds.Parameters.AddWithValue("@Am", GrdTotal);
+                    cmds.ExecuteNonQuery();
+                }
                 MessageBox.Show("เพิ่มคำสั่งจองเรียบร้อย","ข้อความจากระบบ",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                Con.Close();
                 DisplayTransactions();
                
             }

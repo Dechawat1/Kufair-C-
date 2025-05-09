@@ -13,8 +13,7 @@ namespace KufairFull
 {
     public partial class CustomerFm : Form
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-SSC2FCL;Initial Catalog=KUFAIR;User ID=sa;Password=181244;Pooling=False");
-        SqlCommand cm = new SqlCommand();
+        
         DbConnect dbcon = new DbConnect();
         SqlDataReader dr;
 
@@ -22,7 +21,7 @@ namespace KufairFull
         public CustomerFm()
         {
             InitializeComponent();
-            cn = new SqlConnection(dbcon.connection());
+            using(SqlConnection con = dbcon.GetConnection())
             lblUser.Text = Login.Employee;
             DisplayCustomer();
         }
@@ -64,15 +63,21 @@ namespace KufairFull
         }
         private void DisplayCustomer()
         {
-            cn.Open();
-            string Query = "Select * from CustomerTbl";
-            SqlDataAdapter sda = new SqlDataAdapter(Query, cn);
-            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            dgvCus.DataSource = ds.Tables[0];
-            cn.Close();
-
+            try
+            {
+                using (SqlConnection con = dbcon.GetConnection())
+                {
+                    string query = "SELECT * FROM CustomerTbl";
+                    SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                    var ds = new DataSet();
+                    sda.Fill(ds);
+                    dgvCus.DataSource = ds.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public void CheckField()
@@ -88,37 +93,40 @@ namespace KufairFull
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            try
+            CheckField();
+            if (!check)
+                return;
+
+            if (MessageBox.Show("คุณต้องการที่จะบันทึกข้อมูล?", "แจ้งเตือนจากระบบ !!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+                return;
+
+            using (SqlConnection con = dbcon.GetConnection())
             {
-                CheckField();
-                if (check)
+                try
                 {
-                    if (MessageBox.Show("คุณต้องการที่จะบันทึกข้อมูล?", "แจ้งเตือนจากระบบ !!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    con.Open();
+
+                    string insertQuery = "INSERT INTO CustomerTbl (CustName, CustAdd, CustPhone, CustEmail) VALUES(@CN, @CA, @CP, @CM)";
+                    using (SqlCommand insertCmd = new SqlCommand(insertQuery, con))
                     {
-                        cm = new SqlCommand("INSERT INTO CustomerTbl (CustName,CustAdd,CustPhone,CustEmail) VALUES (@CN,@CA,@CP,@CM)", cn);
-                        cm.Parameters.AddWithValue("@CN", txtname.Text);
-                        cm.Parameters.AddWithValue("@CA", txtAddress.Text);
-                        cm.Parameters.AddWithValue("@CP", txtphone.Text);
-                        cm.Parameters.AddWithValue("@CM", txtemail.Text);
-
-                        cn.Open();
-                        cm.ExecuteNonQuery();
-                        MessageBox.Show("บันถึงข้อมูลเสร็จสิ้น!", "เเจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        cn.Close();
-                        DisplayCustomer();   
-                        Clear();
-
+                        insertCmd.Parameters.AddWithValue("@CN", txtname.Text);
+                        insertCmd.Parameters.AddWithValue("@CA", txtAddress.Text);
+                        insertCmd.Parameters.AddWithValue("@CP", txtphone.Text);
+                        insertCmd.Parameters.AddWithValue("@CM", txtemail.Text);
+                        insertCmd.ExecuteNonQuery();
                     }
 
+                    MessageBox.Show("บันทึกข้อมูลเสร็จสิ้น!", "แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DisplayCustomer();
+                    Clear();
                 }
-
-            }
-            catch (Exception ex)
-            {
-                cn.Close();
-                MessageBox.Show(ex.Message);
+                catch (Exception ex)
+                {
+                    MessageBox.Show("เกิดข้อผิดพลาด: " + ex.Message);
+                }
             }
         }
+
         int Key = 0;
         private void dgvCus_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -141,28 +149,35 @@ namespace KufairFull
             if (Key == 0)
             {
                 MessageBox.Show("โปรดเลือกข้อมูลที่ต้องการจะลบ !!!", "แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            if (MessageBox.Show("คุณแน่ใจหรือไม่ว่าต้องการลบข้อมูลนี้?", "ยืนยันการลบ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 try
                 {
-                    cn.Open();
-                    SqlCommand cmd = new SqlCommand("delete from CustomerTbl where CustId = @CKey", cn);
-                    cmd.Parameters.AddWithValue("@CKey", Key);
+                    using (SqlConnection con = dbcon.GetConnection())
+                    {
+                        con.Open();
+                        string deleteQuery = "DELETE FROM CustomerTbl WHERE CustId = @CKey";
+                        using (SqlCommand cmd = new SqlCommand(deleteQuery, con))
+                        {
+                            cmd.Parameters.AddWithValue("@CKey", Key);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
 
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("ลบข้อมูลเรียบร้อย!!!", "แจ้งเตือนจากระบบ", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                    cn.Close();
+                    MessageBox.Show("ลบข้อมูลเรียบร้อยแล้ว!", "แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     DisplayCustomer();
                     Clear();
-                   // LoadCustomer();
                 }
-                catch (Exception Ex)
+                catch (Exception ex)
                 {
-                    MessageBox.Show(Ex.Message);
+                    MessageBox.Show("เกิดข้อผิดพลาด: " + ex.Message, "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
+
 
 
         private void btnHm_Click(object sender, EventArgs e)
@@ -270,40 +285,74 @@ namespace KufairFull
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            cm = new SqlCommand("Select * from CustomerTbl where CustName LIKE @CN+ '%'", cn);
-            cm.Parameters.AddWithValue("CN", txtSearch.Text);
-            SqlDataAdapter sda = new SqlDataAdapter();
-            sda.SelectCommand = cm;
-            var dt = new DataTable();
-            dt.Clear();
-            sda.Fill(dt);
-            dgvCus.DataSource = dt;
+            try
+            {
+                using (SqlConnection cn = dbcon.GetConnection())
+                {
+                    cn.Open();
+                    string searchQuery = "SELECT * FROM CustomerTbl WHERE CustName LIKE @CN";
+                    using (SqlCommand cmd = new SqlCommand(searchQuery, cn))
+                    {
+                        // เพิ่ม wildcard '%' ในค่าที่ส่งเข้า parameter
+                        cmd.Parameters.AddWithValue("@CN", txtSearch.Text + "%");
+
+                        SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        sda.Fill(dt);
+                        dgvCus.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("เกิดข้อผิดพลาด: " + ex.Message);
+            }
         }
 
         private void btnEdits_Click(object sender, EventArgs e)
         {
-            try
+
+            CheckField();
+            if (check) return;
+            if (MessageBox.Show("คุณต้องการจะแก้ไขข้อมูล ?", "แจ้งเตือนจากระบบ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                return;
+
+                try
             {
-                CheckField();
-                if (check)
-                {
-                    if (MessageBox.Show("คุณต้องการจะแก้ไขข้อมูล ?", "แจ้งเตือนจากระบบ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+               
+                using (SqlConnection con = dbcon.GetConnection())
                     {
-
-                        cm = new SqlCommand("UPDATE CustomerTbl SET CustName=@CN, CustAdd=@CA, CustPhone=@CP ,CustEmail=@CM WHERE Custid=@CID", cn);
-                        cm.Parameters.AddWithValue("@CN", txtname.Text);
-                        cm.Parameters.AddWithValue("@CA", txtAddress.Text);
-                        cm.Parameters.AddWithValue("@CP", txtphone.Text);
-                        cm.Parameters.AddWithValue("@CM", txtemail.Text);
-                        cm.Parameters.AddWithValue("@CID", Key);
-
-                        cn.Open();
-                        cm.ExecuteNonQuery();
-                        MessageBox.Show("อัพเดทข้อมูลเรียบร้อย", "เเจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        cn.Close();
-                        DisplayCustomer();
-                        Clear();
+                    con.Open();
+                    string checkQuery = "SELECT * FROM CustomerTbl WHERE CustName = @CN AND CustAdd = @CA AND CustPhone = @CP AND CustEmail = @CM";
+                    using (SqlCommand checkCmd = new SqlCommand(checkQuery, con))
+                    {
+                        checkCmd.Parameters.AddWithValue("@CN", txtname.Text);
+                        checkCmd.Parameters.AddWithValue("@CA", txtAddress.Text);
+                        checkCmd.Parameters.AddWithValue("@CP", txtphone.Text);
+                        checkCmd.Parameters.AddWithValue("@CM", txtemail.Text);
+                        dr = checkCmd.ExecuteReader();
+                        if (dr.Read())
+                        {
+                            MessageBox.Show("ข้อมูลนี้มีอยู่ในระบบแล้ว!", "แจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                        dr.Close();
                     }
+                    // ถ้าไม่มีข้อมูลซ้ำ ให้เพิ่มข้อมูล
+                    string updateQuery = "UPDATE CustomerTbl SET CustName=@CN, CustAdd=@CA, CustPhone=@CP, CustEmail=@CM WHERE CustId=@CID";
+                    using (SqlCommand updateCmd = new SqlCommand(updateQuery, con))
+                    {
+                        updateCmd.Parameters.AddWithValue("@CN", txtname.Text);
+                        updateCmd.Parameters.AddWithValue("@CA", txtAddress.Text);
+                        updateCmd.Parameters.AddWithValue("@CP", txtphone.Text);
+                        updateCmd.Parameters.AddWithValue("@CM", txtemail.Text);
+                        updateCmd.Parameters.AddWithValue("@CID", Key);
+                        updateCmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("อัพเดทข้อมูลเรียบร้อย", "เเจ้งเตือนจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DisplayCustomer();
+                    Clear();
 
                 }
             }

@@ -13,6 +13,8 @@ namespace KufairFull
 {
     public partial class Products : Form
     {
+
+        DbConnect dbcon = new DbConnect();
         public Products()
         {
             InitializeComponent();
@@ -20,17 +22,26 @@ namespace KufairFull
             DisplayProduct();
         }
 
-        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-SSC2FCL;Initial Catalog=KUFAIR;User ID=sa;Password=181244");
         private void DisplayProduct()
         {
-            Con.Open();
-            string Query = "Select * from tbProduct";
-            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
-            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            ProductDGV.DataSource = ds.Tables[0];
-            Con.Close();
+            try
+            {
+                using (SqlConnection con = dbcon.GetConnection())
+                {
+                    con.Open();
+                    string query = "SELECT * FROM tbProduct";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    SqlDataAdapter sdas = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    sdas.Fill(dt);
+                    ProductDGV.DataSource = dt;
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
         private void Clear()
         {
@@ -66,15 +77,20 @@ namespace KufairFull
             {
                 try
                 {
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into tbProduct (pname,pcategory,pqty,pprice) values(@PN,@PC,@PQ,@PP)", Con);
-                    cmd.Parameters.AddWithValue("@PN", Pname.Text);
-                    cmd.Parameters.AddWithValue("@PC", cbpd.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@PQ", pprice.Text);
-                    cmd.Parameters.AddWithValue("@PP", pqty.Text);
-                    cmd.ExecuteNonQuery();
+                    using (SqlConnection con = dbcon.GetConnection())
+                    {
+                        con.Open();
+                        string insertQuery = "insert into tbProduct (pname,pcategory,pqty,pprice) values(@PN,@PC,@PQ,@PP)";
+                        using (SqlCommand cmd = new SqlCommand(insertQuery, con))
+                        {
+                            cmd.Parameters.AddWithValue("@PN", Pname.Text);
+                            cmd.Parameters.AddWithValue("@PC", cbpd.SelectedItem.ToString());
+                            cmd.Parameters.AddWithValue("@PQ", pqty.Text);
+                            cmd.Parameters.AddWithValue("@PP", pprice.Text);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
                     MessageBox.Show("เพิ่มสินค้าเสร็จสิ้น","ข้อความจากระบบ",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    Con.Close();
                     DisplayProduct();
                     Clear();
                 }
@@ -95,17 +111,20 @@ namespace KufairFull
             {
                 try
                 {
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("Update tbProduct set pname=@PN,pcategory=@PC,pqty=@PQ,pprice=@PP where pid=@PKey", Con);
-                    cmd.Parameters.AddWithValue("@PN", Pname.Text);
-                    cmd.Parameters.AddWithValue("@PC", cbpd.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@PP", pprice.Text);
-                    cmd.Parameters.AddWithValue("@PQ", pqty.Text);
-                    cmd.Parameters.AddWithValue("@PKey", Key);
+                    using (SqlConnection con = dbcon.GetConnection())
+                    {
+                        con.Open();
+                        string updateQuery = "Update tbProduct set pname=@PN,pcategory=@PC,pqty=@PQ,pprice=@PP where pid=@PKey";
+                        SqlCommand cmd = new SqlCommand(updateQuery, con);
+                        cmd.Parameters.AddWithValue("@PN", Pname.Text);
+                        cmd.Parameters.AddWithValue("@PC", cbpd.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@PP", pprice.Text);
+                        cmd.Parameters.AddWithValue("@PQ", pqty.Text);
+                        cmd.Parameters.AddWithValue("@PKey", Key);
 
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("อัพเดทสินค้าเรียบร้อย", "ข้อความจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Con.Close();
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("อัพเดทสินค้าเรียบร้อย", "ข้อความจากระบบ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                     DisplayProduct();
                     Clear();
                 }
