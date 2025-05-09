@@ -1,0 +1,373 @@
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\bin\Debug\KufairFull.exe.config
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\bin\Debug\KufairFull.exe
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\bin\Debug\KufairFull.pdb
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.csproj.AssemblyReference.cache
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.Login.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.Properties.Resources.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.csproj.GenerateResource.cache
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.csproj.CoreCompileInputs.cache
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.exe
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.pdb
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.Home.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.Employees.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.Customer.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige)\KufairFull\obj\Debug\KufairFull.Products.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\KufairFull.exe.config
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\KufairFull.exe
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\KufairFull.pdb
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.csproj.AssemblyReference.cache
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Employees.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Home.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Login.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Products.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Properties.Resources.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.csproj.GenerateResource.cache
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.csproj.CoreCompileInputs.cache
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.exe
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.pdb
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.CustomerFM.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.ProductsKu.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Bill.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Bill2.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.BillKufair.resources
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Buffers.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.CodeDom.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.Odbc.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.OleDb.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.SqlClient.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Drawing.Common.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Packaging.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Ports.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Memory.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Permissions.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Syndication.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Threading.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.csproj.CopyComplete
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.SystemEvents.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Buffers.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.CodeDom.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.Odbc.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.OleDb.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.SqlClient.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Diagnostics.EventLog.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Drawing.Common.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Packaging.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Pipes.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Ports.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Memory.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Cng.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Permissions.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Duplex.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Http.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.NetTcp.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Security.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Syndication.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceProcess.ServiceController.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Threading.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Web.Services.Description.dll
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Duplex.pdb
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Http.pdb
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.NetTcp.pdb
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Primitives.pdb
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Security.pdb
+C:\Users\princ\OneDrive\Desktop\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Web.Services.Description.pdb
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\KufairFull.exe.config
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\KufairFull.exe
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\KufairFull.pdb
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.SystemEvents.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Buffers.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.CodeDom.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.Odbc.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.OleDb.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Diagnostics.EventLog.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Drawing.Common.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Packaging.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Pipes.AccessControl.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Ports.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Memory.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Cng.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Permissions.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Duplex.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Http.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.NetTcp.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Security.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Syndication.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceProcess.ServiceController.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Threading.AccessControl.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Web.Services.Description.dll
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Buffers.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.CodeDom.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.Odbc.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.OleDb.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Drawing.Common.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Packaging.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.IO.Ports.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Memory.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Permissions.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Duplex.pdb
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Http.pdb
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.NetTcp.pdb
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Primitives.pdb
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Security.pdb
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceModel.Syndication.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Threading.AccessControl.xml
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\bin\Debug\System.Web.Services.Description.pdb
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Bill.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Bill2.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.BillKufair.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.CustomerFm.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Employees.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Home.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Login.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Products.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.ProductsKu.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.Properties.Resources.resources
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.csproj.GenerateResource.cache
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.csproj.CoreCompileInputs.cache
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.exe
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.pdb
+C:\Users\Win10\Desktop\New folder (2)\KufairDemo(NewDisige) - สำเนา\KufairFull\obj\Debug\KufairFull.csproj.AssemblyReference.cache
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\KufairFull.exe.config
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\KufairFull.exe
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\KufairFull.pdb
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\Microsoft.Win32.SystemEvents.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Buffers.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.CodeDom.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Data.Odbc.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Data.OleDb.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Data.SqlClient.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Diagnostics.EventLog.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Drawing.Common.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.IO.Packaging.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.IO.Pipes.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.IO.Ports.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Memory.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Cryptography.Cng.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Permissions.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Duplex.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Http.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.NetTcp.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Security.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Syndication.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceProcess.ServiceController.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Threading.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Web.Services.Description.dll
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Buffers.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.CodeDom.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Data.Odbc.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Data.OleDb.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Data.SqlClient.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Drawing.Common.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.IO.Packaging.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.IO.Ports.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Memory.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Permissions.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Duplex.pdb
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Http.pdb
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.NetTcp.pdb
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Primitives.pdb
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Security.pdb
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceModel.Syndication.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Threading.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\bin\Debug\System.Web.Services.Description.pdb
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.csproj.AssemblyReference.cache
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.Bill.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.Bill2.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.BillKufair.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.CustomerFm.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.Employees.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.Home.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.Login.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.Products.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.ProductsKu.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.Properties.Resources.resources
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.csproj.GenerateResource.cache
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.csproj.CoreCompileInputs.cache
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.csproj.CopyComplete
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.exe
+C:\Users\princ\OneDrive\Desktop\โฟลเดอร์ใหม่ (2)\KufairFull\obj\Debug\KufairFull.pdb
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\KufairFull.exe.config
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\KufairFull.exe
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\KufairFull.pdb
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\Microsoft.Win32.SystemEvents.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Buffers.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.CodeDom.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Data.Odbc.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Data.OleDb.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Data.SqlClient.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Diagnostics.EventLog.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Drawing.Common.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.IO.Packaging.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.IO.Pipes.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.IO.Ports.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Memory.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Cryptography.Cng.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Permissions.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Duplex.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Http.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.NetTcp.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Security.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Syndication.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceProcess.ServiceController.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Threading.AccessControl.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Web.Services.Description.dll
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Buffers.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.CodeDom.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Data.Odbc.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Data.OleDb.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Data.SqlClient.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Drawing.Common.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.IO.Packaging.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.IO.Ports.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Memory.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Permissions.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Duplex.pdb
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Http.pdb
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.NetTcp.pdb
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Primitives.pdb
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Security.pdb
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceModel.Syndication.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Threading.AccessControl.xml
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\bin\Debug\System.Web.Services.Description.pdb
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.Bill.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.Bill2.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.BillKufair.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.CustomerFm.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.Employees.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.Home.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.Login.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.Products.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.ProductsKu.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.Properties.Resources.resources
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.csproj.GenerateResource.cache
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.csproj.CoreCompileInputs.cache
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.csproj.CopyComplete
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.exe
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.pdb
+C:\Users\princ\OneDrive\Desktop\KUFAIR(FULL)\KufairFull\obj\Debug\KufairFull.csproj.AssemblyReference.cache
